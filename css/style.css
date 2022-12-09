@@ -16,6 +16,10 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+.img-proyects{
+  border-radius: 12px;
+}
+.img-proyects:hover{background-color: #ffffff8a;}
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
