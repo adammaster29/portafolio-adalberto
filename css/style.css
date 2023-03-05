@@ -1,7 +1,9 @@
 
 body {
-  background: #ffffff;
-  color: #898989;
+  box-flex-group: var(---fondo);
+  color: var(---letras);
+  /* background: #ffffff; */
+  /* color: #898989; */
   font-family: 'Poppins', helvetica;
   font-size: 15px;
   font-weight: 300;
@@ -16,6 +18,9 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+
+
 .img-proyects{
   border-radius: 12px;
 }
@@ -26,13 +31,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  color: #292929;
+  color: #09a2ad8f;
   font-weight: 600;
 }
 
 h4 {
   color: #292929;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -95,7 +100,7 @@ p {
 }
 
 .btn {
-  background: #333;
+  background: #09a2ad8f;;
   border: medium none;
   border-radius: 0;
   color: #fff;
