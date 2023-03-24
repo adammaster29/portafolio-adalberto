@@ -1,8 +1,44 @@
 
+
+:root{
+  --fondo:white;
+  --titulo:#09a2ad8f;
+  --letraSubtitulo:#999999;
+  --span:#292929;
+  --img:url("../images/ADAM.jpeg");
+  --textoNav:#999999;
+  --fondoAbout:white;
+  --fondoNav:white;
+  --textShadow: 2px 2px 2px gray, -2px -2px 2px black;
+  --btn-color:#09a2ad8f;
+ 
+}
+
+
+body.modo-nocturno{
+  --fondo:rgba(0, 0, 0, 0.979);
+  --titulo:white;
+  --letraSubtitulo:white;
+  --span:white;
+  --img:url("../images/adam-dark.jpeg");
+  --textoNav:white;
+  --fondoAbout:rgba(0, 0, 255, 0.096);
+  --fondoNav:rgba(0, 0, 0, 0.281);
+  --textShadow: 2px 2px 2px gray, -2px -2px 2px rgb(0, 103, 134);
+  --btn-color:#4a66688f;
+
+}
+
+
+.bx-sun:before {
+  color: white;
+}
+
+
 body {
   box-flex-group: var(---fondo);
   color: var(---letras);
-  /* background: #ffffff; */
+  background: var(--fondo);
   /* color: #898989; */
   font-family: 'Poppins', helvetica;
   font-size: 15px;
@@ -19,8 +55,15 @@ body {
   box-sizing: border-box;
 }
 
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  justify-content: space-around;
+}
 
-
+.bx-moon{color: var(--titulo);}
 .img-proyects{
   border-radius: 12px;
 }
@@ -31,18 +74,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  color: #09a2ad8f;
+  color: var(--titulo);
   font-weight: 600;
+  text-shadow: var(--textShadow);
 }
 
 h4 {
-  color: #292929;
+  color: var(--span);
   font-size: 18px;
   font-weight: 600;
 }
 
 a {
-  color: #292929;
+  color: var(--span);
   text-decoration: none !important;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
@@ -69,7 +113,7 @@ nav ul li a {
   position: relative;
   display: block;
   font-size: 12px;
-  color: #999999;
+  color: var(--letraSubtitulo);
   letter-spacing: 0.1em;
   font-weight: 500;
   line-height: 14px;
@@ -85,7 +129,7 @@ p {
   margin: 25px 0;
   padding: 0;
   font-size: 15px;
-  color: #999999;
+  color: var(--letraSubtitulo);
   line-height: 28px;
 }
 
@@ -100,7 +144,7 @@ p {
 }
 
 .btn {
-  background: #09a2ad8f;;
+  background: var(--btn-color);
   border: medium none;
   border-radius: 0;
   color: #fff;
@@ -133,7 +177,7 @@ p {
   background-color: transparent;
   border: 1px solid #999;
   border-radius: 0;
-  color: #999999;
+  color: var(--span);
   font-size: 12px;
   font-weight: 500;
   height: 50px;
@@ -177,7 +221,7 @@ p {
 
 nav {
   position: fixed;
-  background: #fff;
+  background: var(--fondoNav);
   z-index: 1000;
   width: 100%;
   padding: 20px;
@@ -207,7 +251,7 @@ nav ul li a {
   position: relative;
   display: block;
   font-size: 14px;
-  color: #999999;
+  color: var(--textoNav);
   font-family: 'Poppins', helvetica;
   font-weight: 500;
   line-height: 16px;
@@ -239,7 +283,7 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #header {
-  background: url("../images/ADAM.jpeg") repeat scroll center center / cover;
+  background: var(--img) repeat scroll center center / cover;
   height: 100vh;
   width: 100%;
 }
@@ -268,7 +312,7 @@ nav ul li a {
   margin-top: 0;
   margin-bottom: 30px;
   text-transform: capitalize;
-  color: #fff;
+  color: var(--textoNav);
   font-weight: 500;
 }
 
@@ -277,8 +321,9 @@ nav ul li a {
   margin-right: 20px;
 }
 .typed{
-  color: gray;
+  color: var(--textoNav);
 }
+
 /*change move*/
 
 .header-content .list-social li i {
@@ -287,13 +332,13 @@ nav ul li a {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/*  Aout-us
+/*  About-us
 /*-----------------------------------------------------------------------------------*/
 
 #about {
   width: 100%;
   height: auto;
-  background: #f7f7f7;
+  background: var(--fondoAbout);
   padding-top: 190px;
 }
 
@@ -328,7 +373,7 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #services {
-  background: #f7f7f7;
+  background: var(--fondo);
   position: relative;
   padding-bottom: 80px;
 }
@@ -340,7 +385,7 @@ nav ul li a {
   margin: 10px 0;
   position: relative;
   font-size: 13px;
-  color: #292929;
+  color: var(--span);
   letter-spacing: 0.1em;
   font-weight: 500;
   text-transform: uppercase;
@@ -397,6 +442,7 @@ nav ul li a {
 #portfolio {
   position: relative;
   padding-bottom: 50px;
+  background: var(--fondoAbout);
 }
 
 #portfolio .portfolio-list {
@@ -412,7 +458,7 @@ nav ul li a {
   margin: 0 40px 0 0;
   float: left;
   font-size: 14px;
-  color: #999999;
+  color: var(--span);
   line-height: 16px;
   cursor: pointer;
   font-family: 'Poppins', helvetica;
@@ -462,7 +508,7 @@ nav ul li a {
 #journal,  #journal-blog {
   height: auto;
   width: 100%;
-  background: #f7f7f7;
+  background: var(---fondo);
   padding-bottom: 60px;
   position: relative;
 }
@@ -497,7 +543,7 @@ nav ul li a {
   line-height: 24px;
   margin: 0 0 13px 0;
   font-weight: 500;
-  color: #292929;
+  color: var(--span);
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -527,8 +573,12 @@ nav ul li a {
 #contact {
   height: auto;
   width: 100%;
+  color: var(--letraSubtitulo);
+  background: var(--fondoAbout);
 }
-
+.correo a{
+  color: var(--letraSubtitulo);
+}
 .contact-details {
   list-style: none;
   margin: 0;
@@ -581,7 +631,7 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #footer {
-  background: #f7f7f7;
+  background: var(--fondo);
   padding-top: 50px;
   padding-bottom: 50px;
 }
