@@ -354,7 +354,7 @@ nav ul li a {
   /* margin-top: -60px;
   margin-left: 40px; */
   height: 400px;
-  object-fit: cover;
+object-fit: cover;
 }
 
 
@@ -498,7 +498,20 @@ nav ul li a {
 .portfolio-thumbnail img {
   max-width: 100%;
 }
-
+/* ------------------------------Mantenimiento----------------------------------------- */
+.mantenimiento{
+  color: red;
+  font-weight: 600;
+  text-decoration: line-through;
+  text-shadow: 2px 2px 2px gray, -2px -2px 2px rgb(31, 26, 26);
+}
+.img-proyects{
+  border: 1px solid #7e7979;
+}
+.img-proyects:hover{
+  border: 2px solid rgb(12, 134, 155);
+opacity: 50%;
+}
 /*-----------------------------------------------------------------------------------*/
 /*  Journal
 /*-----------------------------------------------------------------------------------*/
