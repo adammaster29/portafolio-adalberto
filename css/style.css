@@ -5,7 +5,7 @@
   --titulo:#09a2ad8f;
   --letraSubtitulo:#999999;
   --span:#292929;
-  --img:url("../images/ADAM.jpeg");
+  --img:url("../images/ADAM.jpg");
   --textoNav:#999999;
   --fondoAbout:white;
   --fondoNav:white;
@@ -20,7 +20,7 @@ body.modo-nocturno{
   --titulo:white;
   --letraSubtitulo:white;
   --span:white;
-  --img:url("../images/adam-dark.jpeg");
+  --img:url("../images/fondo-dark.jpg");
   --textoNav:white;
   --fondoAbout:rgba(0, 0, 255, 0.096);
   --fondoNav:rgba(0, 0, 0, 0.281);
@@ -107,7 +107,14 @@ a:hover, a:focus {
   color: #b8a07e;
   text-decoration: underline;
 }
-
+.Over-whatsapp{
+  display: flex;
+  font-size: 40px;
+  position: fixed;
+  margin-left: 80%;
+margin-top: -250px;
+z-index: 2;
+}
 nav ul li a {
   padding: 2px 0 0 0;
   position: relative;
